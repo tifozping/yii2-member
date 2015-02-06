@@ -33,7 +33,8 @@ AppAsset::register($this);
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
-                ['label' => 'บันทึกข้อมูล', 'url' => ['/student/create']]
+                ['label' => 'บันทึกข้อมูล', 'url' => ['/student/create']],
+                
             ];
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
